@@ -1,3 +1,9 @@
+$('.features__item > div').on('click', function(){
+    $(this).children('.icon__bold').toggleClass('active-f');
+    $(this).parent('.features__item').toggleClass('toggleBg-f');
+    $(this).next('.after__link').slideToggle(200);
+})
+
 $('.about__items > div').on('click', function(){
     // alert('hello') - всплывающее окно
     $(this).children('.about__icon').toggleClass('active');
